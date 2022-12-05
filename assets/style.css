@@ -1,49 +1,49 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: sans-serif;
-  }
+body {
+  font-family: sans-serif;
+}
 
-  .flex-container-column {
-    display: flex;
-    flex-direction: column;
-  
-    /* properti pendukung */
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: right;
- }
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
 
- .flex-container-row {
-    display: flex;
-  }
+  /* properti pendukung */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
 
-  .button {
-    flex-basis: 25%;
-    
-    /* properti pendukung */
-    font-size: 1.5em;
-    text-align: center;
-    padding: 40px;
-    border: 1px solid black;
-    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
-    cursor: pointer;
-  }
+.flex-container-row {
+  display: flex;
+}
 
-  .double {
-    flex-basis: 50%;
-  }
+.button {
+  flex-basis: 25%;
 
-  .display {
-    color: white;
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #333333;
-    border: 1px solid black;
-    font-size: 2em;
-  }
+  /* properti pendukung */
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid black;
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+  cursor: pointer;
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333333;
+  border: 1px solid black;
+  font-size: 2em;
+}
 
 .operator,
 .negative,
@@ -52,19 +52,45 @@
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 30px;
-    margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
 }
 
 .button:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 513px) {
-    .button {
-        padding: 10px;
-    }
+  .button {
+    padding: 10px;
+  }
+  .history {
+    width: 100%;
+  }
 }
 
+.history {
+  width: 80%;
+  margin: 3px auto 0 auto;
+  overflow: scroll;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th,
+td  {
+  text-align: center;
+  padding: 16px;
+}
+th {
+  background-color: orange;
+  color: white;
+}
+  tr:nth-child(even) {
+  background-color: #d2d2d2;
+}

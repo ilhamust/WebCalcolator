@@ -62,7 +62,15 @@ function performCalculation() {
     result =
       parseInt(calculator.fristNumber) - parseInt(calculator.displayNumber);
   }
+  const history = {
+    firstNumber: calculator.fristNumber,
+    secondNumber: calculator.displayNumber,
+    operator: calculator.operator,
+    result: result,
+  };
+  putHistory(history);
   calculator.displayNumber = result;
+  renderHistory();
 }
 
 // mengambil button
