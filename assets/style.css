@@ -4,6 +4,15 @@
 
 body {
   font-family: sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Mode gelap */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .flex-container-column {
